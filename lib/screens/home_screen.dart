@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
+
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -98,26 +100,69 @@ class _HomeScreenState extends State<HomeScreen> {
                     bottom: 8.0,
                     right: 2.0,
                     child: Container(
-                      width: 44,
+                      width: 54,
                       height: 44,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8.0),
-                        color: Colors.orange,),
+                        color: Colors.orangeAccent,),
 
-                        child: Icon(Icons.search),
+                        child: Icon(Icons.search,size: 36,),
                     ),
                   ),
                 ],
             ),
+    //       Container(
+    //         height: 40,
+    //         color:Color(0xFF021524),
+    // ),
+
+
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal, // スクロールの向きを水平方向に指定
+                  child:Row(
+                    children: [
+                      myContainer(text:'ランキング'),
+                      myContainer(text:'プライム'),
+                      myContainer(text:'タイムセール'),
+                      myContainer(text:'本・コミック'),
+                      myContainer(text:'新着商品'),
+                      myContainer(text:'ビデオ'),
+                      myContainer(text:'ギフト券'),
+                    ],
+                  ),
+                ),
           Container(
-            height: 40,
-            color:Colors.blueGrey[900],
+            height: 44,
+            color:Colors.blueGrey[800],
+              child: TextButton(onPressed: (){}, child: Text('お届け先の住所を選択'),
+
+              ),
           ),
           Image(image: AssetImage('assets/images/amazon_top.jpg'),
           ),
 
-
-
     ]));
   }
 }
+
+
+Widget myContainer({double size = 100, String text = ''}) {
+  return Container(
+    color:Color(0xFF021524),
+    width: size,
+    height: 40,
+    child: Center(
+      child: Padding(
+        padding: const EdgeInsets.only(top:4,bottom:14),
+        child: Text(
+          text,
+          style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+
+          ),
+        ),
+      ),
+    ),
+  );}
