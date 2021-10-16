@@ -150,12 +150,14 @@ class _HomeScreenState extends State<HomeScreen> {
           Image(
             image: AssetImage('assets/images/amazon_top.jpg'),
           ),
-       ProductCarousel(
-         title:'ようこそ',
+
+          ProductCarousel(
+         title:'注目のタイムセール',
          products: products,
+
        ),
           ProductCarousel(
-         title:'音声アシスタントのアレクサとできること',
+         title:'あなたにおすすめの本',
          products: books,
        ),
         ],
