@@ -26,6 +26,7 @@ class ProductCarousel extends StatelessWidget {
         ],
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             color: Colors.white,
@@ -41,12 +42,13 @@ class ProductCarousel extends StatelessWidget {
               fontSize: 18.0,
             ),
           ),
-          SizedBox(height: 4.0),
+          SizedBox(height: 6.0),
           Column(
             children: [
               Text('\¥${products[index].price}',
                 style: TextStyle(
-                  fontSize: 18.0,
+                  fontSize: 16.0,
+
                 ),
               ),
             ],
@@ -57,7 +59,9 @@ class ProductCarousel extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) => Column(
+  Widget build(BuildContext context) =>
+      Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding:

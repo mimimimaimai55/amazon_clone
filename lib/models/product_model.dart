@@ -3,18 +3,23 @@ class Product{
   String name;
   int price;
 
+
   Product({
     required this.imageUrl,
     required this.name,
     required this.price,
+
   });
 }
+
 
 final List<Product> products = [
   Product(
     imageUrl: 'assets/images/mxmaster.jpg',
     name: 'Logitech MX Master 2S',
+    // price = 1234567;
     price: 5990,
+
   ),
   Product(
     imageUrl: 'assets/images/blueyeti.jpg',
