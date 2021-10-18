@@ -1,6 +1,7 @@
 import 'package:amazon_clone/models/product_model.dart';
 import 'package:amazon_clone/widgets/prpduct_carousel.dart';
 import 'package:flutter/material.dart';
+import 'cart_screen.dart';
 
 class HomeScreen extends StatefulWidget {
 
@@ -48,8 +49,13 @@ class _HomeScreenState extends State<HomeScreen> {
               Padding(
                 padding: EdgeInsets.only(top: 11, right: 14.0),
                 child: InkResponse(
-                  onTap: () => print('カート'),
-                  child: Icon(Icons.shopping_cart_outlined,
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder:(_) => CartScreen(),
+                    ),
+                  ),
+                    child: Icon(Icons.shopping_cart_outlined,
                       size: 36.0, color: Colors.white),
                 ),
               ),
