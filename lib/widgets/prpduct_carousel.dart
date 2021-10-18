@@ -41,6 +41,16 @@ class ProductCarousel extends StatelessWidget {
               fontSize: 18.0,
             ),
           ),
+          SizedBox(height: 4.0),
+          Column(
+            children: [
+              Text('\¥${products[index].price}',
+                style: TextStyle(
+                  fontSize: 18.0,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );

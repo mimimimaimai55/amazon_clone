@@ -160,6 +160,7 @@ class _HomeScreenState extends State<HomeScreen> {
          title:'あなたにおすすめの本',
          products: books,
        ),
+          SizedBox(height: 30.0,)
         ],
       ),
     );
