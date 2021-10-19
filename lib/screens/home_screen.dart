@@ -118,10 +118,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
-          //       Container(
-          //         height: 40,
-          //         color:Color(0xFF021524),
-          // ),
 
           SingleChildScrollView(
             scrollDirection: Axis.horizontal, // スクロールの向きを水平方向に指定
