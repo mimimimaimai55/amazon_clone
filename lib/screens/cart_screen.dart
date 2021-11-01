@@ -69,7 +69,7 @@ class _CartScreenState extends State<CartScreen> {
             child: InkResponse(
               onTap: () => print('ログイン'),
               child:
-              Icon(Icons.person_outline, size: 40.0, color: Colors.white),
+              Icon(Icons.person_outline, size: 42.0, color: Colors.white),
             ),
           ),
           Stack(
