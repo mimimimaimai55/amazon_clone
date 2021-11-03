@@ -89,7 +89,7 @@ class _CartScreenState extends State<CartScreen> {
               ),
               Positioned(
                 bottom: 34.0,
-                right: 17.0,
+                right: 18.0,
                 child: Container(
                   height: 20.0,
                   width: 20.0,
